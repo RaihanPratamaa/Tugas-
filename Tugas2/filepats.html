@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content</title>
+</head>
+<body>
+
+    <h2 id="judul">Yg bener</h2>
+    <img id="gambar" src="https://imgcdn.oto.com/large/gallery/exterior/24/2940/mclaren-senna-front-angle-low-view-860176.jpg?tr=w-510,h-340" alt="McLaren Senna" style="width:300px">
+
+    <br><br>
+    <button onclick="gantiKonten()">Ganti Konten</button>
+
+    <script>
+        function gantiKonten() {
+            document.getElementById("judul").innerText = "Motor Keren";
+            document.getElementById("gambar").src = "https://www.ducati.com/ww/en/bikes/panigale/superleggera-v4/_jcr_content/root/responsivegrid/product_carousel_127395109/item_1643036811111.coreimg.png/1703684269708/superleggera-v4-gallery-02-1920x1080.jpg";
+            document.getElementById("gambar").alt = "Ducati Superleggera V4";
+        }
+    </script>
+
+
+</body></html>

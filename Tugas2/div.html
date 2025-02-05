@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <title>HTML Tutorial</title>
+<style>
+div {
+  width:300px;
+  margin:auto;
+}
+</style></head>
+
+<body>
+
+<div id="city1">
+  <h2></h2>
+  <p></p>
+  <p></p>
+</div>
+
+<div id="city2">
+  <h2></h2>
+  <p></p>
+  <p></p>
+</div>
+
+<div id="city3">
+  <h2></h2>
+  <p></p>
+  <p></p>
+</div>
+
+<script>
+    let city1 = {
+        name: "London",
+        description: "London is the capital city of England.",
+        population: "London has over 9 million inhabitants."
+    };
+
+    let city2 = {
+        name: "Oslo",
+        description: "Oslo is the capital city of Norway.",
+        population: "Oslo has over 700,000 inhabitants."
+    };
+
+    let city3 = {
+        name: "Rome",
+        description: "Rome is the capital city of Italy.",
+        population: "Rome has over 4 million inhabitants."
+    };
+
+    document.getElementById("city1").children[0].innerText = city1.name;
+    document.getElementById("city1").children[1].innerText = city1.description;
+    document.getElementById("city1").children[2].innerText = city1.population;
+
+    document.getElementById("city2").children[0].innerText = city2.name;
+    document.getElementById("city2").children[1].innerText = city2.description;
+    document.getElementById("city2").children[2].innerText = city2.population;
+
+    document.getElementById("city3").children[0].innerText = city3.name;
+    document.getElementById("city3").children[1].innerText = city3.description;
+    document.getElementById("city3").children[2].innerText = city3.population;
+</script>
+
+
+</body></html>

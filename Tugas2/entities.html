@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+          <li><a id="homeLink" href="Index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <fieldset>
+      <legend id="legendText">Entities</legend>
+      <figure>
+        <figcaption id="captionText">Kocak</figcaption>
+      </figure>
+    </fieldset>
+
+    <footer>
+       <p>©<small id="footerText"> TERROR</small></p>
+    </footer>
+
+    <br>
+    <button onclick="gantiKonten()">Ganti Konten</button>
+
+    <script>
+        function gantiKonten() {
+            document.getElementById("homeLink").innerText = "Beranda";
+            document.getElementById("homeLink").href = "home.html";
+            document.getElementById("legendText").innerText = "Kategori";
+            document.getElementById("captionText").innerText = "Lucu Banget";
+            document.getElementById("footerText").innerText = "HAK CIPTA 2025";
+        }
+    </script>
+
+
+</body></html>
